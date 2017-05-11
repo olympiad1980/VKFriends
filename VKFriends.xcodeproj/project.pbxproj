@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C7C9C369F7415183C9427B3 /* Pods_VKFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34673AD74ABB6F212F445664 /* Pods_VKFriends.framework */; };
+		8498C0B51EC33E310096F456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498C0B41EC33E310096F456 /* AppDelegate.swift */; };
+		8498C0B71EC33E310096F456 /* VKFriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498C0B61EC33E310096F456 /* VKFriendsVC.swift */; };
+		8498C0BA1EC33E310096F456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8498C0B81EC33E310096F456 /* Main.storyboard */; };
+		8498C0BC1EC33E310096F456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8498C0BB1EC33E310096F456 /* Assets.xcassets */; };
+		8498C0BF1EC33E310096F456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8498C0BD1EC33E310096F456 /* LaunchScreen.storyboard */; };
+		8498C0CA1EC33EAF0096F456 /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498C0C91EC33EAF0096F456 /* Friends.swift */; };
+		8498C0CC1EC33EF30096F456 /* CellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498C0CB1EC33EF30096F456 /* CellVC.swift */; };
+		8498C0CE1EC350850096F456 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498C0CD1EC350850096F456 /* NetworkManager.swift */; };
+		84EC84671EC37E60006413D3 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC84661EC37E60006413D3 /* SwiftyJSON.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34673AD74ABB6F212F445664 /* Pods_VKFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8498C0B11EC33E310096F456 /* VKFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8498C0B41EC33E310096F456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8498C0B61EC33E310096F456 /* VKFriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKFriendsVC.swift; sourceTree = "<group>"; };
+		8498C0B91EC33E310096F456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8498C0BB1EC33E310096F456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8498C0BE1EC33E310096F456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8498C0C01EC33E310096F456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8498C0C91EC33EAF0096F456 /* Friends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
+		8498C0CB1EC33EF30096F456 /* CellVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellVC.swift; sourceTree = "<group>"; };
+		8498C0CD1EC350850096F456 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		84EC84661EC37E60006413D3 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
+		B700AD9CEC28D0740C7DB8BE /* Pods-VKFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKFriends.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKFriends/Pods-VKFriends.debug.xcconfig"; sourceTree = "<group>"; };
+		E61566AF1C616C4B865492C4 /* Pods-VKFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKFriends.release.xcconfig"; path = "Pods/Target Support Files/Pods-VKFriends/Pods-VKFriends.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8498C0AE1EC33E310096F456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7C9C369F7415183C9427B3 /* Pods_VKFriends.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8498C0A81EC33E310096F456 = {
+			isa = PBXGroup;
+			children = (
+				8498C0B31EC33E310096F456 /* VKFriends */,
+				8498C0B21EC33E310096F456 /* Products */,
+				98028582CB39B56AB6F4EECF /* Pods */,
+				9C2B6E5AFF313663D1CC9070 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8498C0B21EC33E310096F456 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8498C0B11EC33E310096F456 /* VKFriends.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8498C0B31EC33E310096F456 /* VKFriends */ = {
+			isa = PBXGroup;
+			children = (
+				8498C0B81EC33E310096F456 /* Main.storyboard */,
+				8498C0C81EC33E5D0096F456 /* Controller */,
+				8498C0C61EC33E3A0096F456 /* swiftyJSON */,
+				8498C0C71EC33E4F0096F456 /* Support */,
+				8498C0BB1EC33E310096F456 /* Assets.xcassets */,
+				8498C0BD1EC33E310096F456 /* LaunchScreen.storyboard */,
+				8498C0C01EC33E310096F456 /* Info.plist */,
+			);
+			path = VKFriends;
+			sourceTree = "<group>";
+		};
+		8498C0C61EC33E3A0096F456 /* swiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				84EC84661EC37E60006413D3 /* SwiftyJSON.swift */,
+			);
+			name = swiftyJSON;
+			sourceTree = "<group>";
+		};
+		8498C0C71EC33E4F0096F456 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8498C0B41EC33E310096F456 /* AppDelegate.swift */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		8498C0C81EC33E5D0096F456 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8498C0B61EC33E310096F456 /* VKFriendsVC.swift */,
+				8498C0CD1EC350850096F456 /* NetworkManager.swift */,
+				8498C0CB1EC33EF30096F456 /* CellVC.swift */,
+				8498C0C91EC33EAF0096F456 /* Friends.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		98028582CB39B56AB6F4EECF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B700AD9CEC28D0740C7DB8BE /* Pods-VKFriends.debug.xcconfig */,
+				E61566AF1C616C4B865492C4 /* Pods-VKFriends.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C2B6E5AFF313663D1CC9070 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34673AD74ABB6F212F445664 /* Pods_VKFriends.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8498C0B01EC33E310096F456 /* VKFriends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8498C0C31EC33E310096F456 /* Build configuration list for PBXNativeTarget "VKFriends" */;
+			buildPhases = (
+				C111618E50A02A866ED8852D /* [CP] Check Pods Manifest.lock */,
+				8498C0AD1EC33E310096F456 /* Sources */,
+				8498C0AE1EC33E310096F456 /* Frameworks */,
+				8498C0AF1EC33E310096F456 /* Resources */,
+				2C55EBD6F0D14A8165080CA4 /* [CP] Embed Pods Frameworks */,
+				A27BF8104A89543CF1B92234 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VKFriends;
+			productName = VKFriends;
+			productReference = 8498C0B11EC33E310096F456 /* VKFriends.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8498C0A91EC33E310096F456 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					8498C0B01EC33E310096F456 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8498C0AC1EC33E310096F456 /* Build configuration list for PBXProject "VKFriends" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8498C0A81EC33E310096F456;
+			productRefGroup = 8498C0B21EC33E310096F456 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8498C0B01EC33E310096F456 /* VKFriends */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8498C0AF1EC33E310096F456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8498C0BF1EC33E310096F456 /* LaunchScreen.storyboard in Resources */,
+				8498C0BC1EC33E310096F456 /* Assets.xcassets in Resources */,
+				8498C0BA1EC33E310096F456 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C55EBD6F0D14A8165080CA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKFriends/Pods-VKFriends-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A27BF8104A89543CF1B92234 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKFriends/Pods-VKFriends-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C111618E50A02A866ED8852D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8498C0AD1EC33E310096F456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8498C0CE1EC350850096F456 /* NetworkManager.swift in Sources */,
+				8498C0CC1EC33EF30096F456 /* CellVC.swift in Sources */,
+				8498C0B71EC33E310096F456 /* VKFriendsVC.swift in Sources */,
+				84EC84671EC37E60006413D3 /* SwiftyJSON.swift in Sources */,
+				8498C0CA1EC33EAF0096F456 /* Friends.swift in Sources */,
+				8498C0B51EC33E310096F456 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8498C0B81EC33E310096F456 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8498C0B91EC33E310096F456 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8498C0BD1EC33E310096F456 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8498C0BE1EC33E310096F456 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8498C0C11EC33E310096F456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8498C0C21EC33E310096F456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8498C0C41EC33E310096F456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B700AD9CEC28D0740C7DB8BE /* Pods-VKFriends.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VKFriends/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = home.VKFriends;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8498C0C51EC33E310096F456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61566AF1C616C4B865492C4 /* Pods-VKFriends.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VKFriends/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = home.VKFriends;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8498C0AC1EC33E310096F456 /* Build configuration list for PBXProject "VKFriends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8498C0C11EC33E310096F456 /* Debug */,
+				8498C0C21EC33E310096F456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8498C0C31EC33E310096F456 /* Build configuration list for PBXNativeTarget "VKFriends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8498C0C41EC33E310096F456 /* Debug */,
+				8498C0C51EC33E310096F456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8498C0A91EC33E310096F456 /* Project object */;
+}
