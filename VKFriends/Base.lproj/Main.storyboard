@@ -29,6 +29,9 @@
                                     <rect key="frame" x="0.0" y="118" width="375" height="50"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="Add Contact"/>
+                                    <connections>
+                                        <action selector="addUserContactAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fkr-c3-IgG"/>
+                                    </connections>
                                 </button>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" rowHeight="90" id="MPR-7b-ud9" customClass="CellVC" customModule="VKFriends" customModuleProvider="target">

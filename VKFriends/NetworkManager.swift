@@ -6,12 +6,14 @@ class NetworkManager {
     var friendsArray = [Friend]()
     
     private let baseURL = "https://api.vk.com/method/"
-    let offcet = 10
+    var offcet = 10
     
     func loadJSONFriends(successful: @escaping ([Friend], Error?) -> Void) {
     
         let method = "friends.get?user_id=10&count=\(offcet)&fields=nickname%2C%20domain%2C%20bdate%2C%20city%2C%20country%2C%20timezone%2Cphoto_200_orig%2C%20has_mobile%2C%20contacts%2C%20education%2C%20status%2C%20can_see_all_posts&v=5.63"
+        
         let finalURL = baseURL + method
+        offcet += 1
         
         let url = URL(string: finalURL)!
         let session = URLSession.shared.dataTask(with: url) { (data, response, error) in

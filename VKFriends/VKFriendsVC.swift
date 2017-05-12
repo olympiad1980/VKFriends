@@ -11,12 +11,19 @@ class VKFriendsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         myTableView.separatorStyle = .none
-        
+        addUser()
+    }
+    
+    @IBAction func addUserContactAction(_ sender: UIButton) {
+        addUser()
+    }
+    
+    func addUser() {
         friends.loadJSONFriends { (successful, error) in
             if let error = error {
                 print("error, \(error)")
             }
-            
+                
             else {
                 self.myTableView.reloadData()
             }
@@ -28,6 +35,7 @@ extension VKFriendsVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let friendsCount = friends.friendsArray
+        
         return friendsCount.count
     }
     
