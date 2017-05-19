@@ -21,13 +21,14 @@ class CellVC: UITableViewCell {
     }
     
     func setupCellData() {
-        if let data = dataInfo {
-            firstnameLabel.text = data.firstname
-            lastnameLabel.text = data.lastname
-            cityLabel.text = data.city
-            faceImageView.image = UIImage.init(data: photoFromVK(image: data.image))
+        if let dataInfo = dataInfo {
+            firstnameLabel.text = dataInfo.firstname
+            lastnameLabel.text = dataInfo.lastname
+            cityLabel.text = dataInfo.city
+            faceImageView.image = UIImage.init(data: photoFromVK(image: dataInfo.image))
         }
     }
+    
     func photoFromVK(image: String) -> Data {
         var data = Data()
         let url = URL.init(string: image)

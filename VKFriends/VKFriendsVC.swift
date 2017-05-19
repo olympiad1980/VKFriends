@@ -1,15 +1,15 @@
 
 import UIKit
-
+import SDWebImage
 class VKFriendsVC: UIViewController {
     
     static let cellIdentifier = "cellIdentifier"
+
     let friends = NetworkManager()
     
     @IBOutlet weak var myTableView: UITableView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidLoad() {        super.viewDidLoad()
         myTableView.separatorStyle = .none
         addUser()
     }
@@ -43,6 +43,7 @@ extension VKFriendsVC: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: VKFriendsVC.cellIdentifier, for: indexPath) as! CellVC
         
         let friendsIndexPathForRow = friends.friendsArray[indexPath.row]
+        
         cell.dataInfo = friendsIndexPathForRow
         return cell
     }

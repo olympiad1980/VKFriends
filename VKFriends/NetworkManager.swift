@@ -16,7 +16,7 @@ class NetworkManager {
         offcet += 1
         
         let url = URL(string: finalURL)!
-        let session = URLSession.shared.dataTask(with: url) { (data, response, error) in
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
             
             guard let data = data else {
                 return
@@ -47,7 +47,6 @@ class NetworkManager {
             DispatchQueue.main.async {
                 successful(self.friendsArray, error)
             }
-        }
-        session.resume()
+        }.resume()
     }
 }
